@@ -60,8 +60,7 @@ First thing we need to do is set up the database connection. Replace the `DATABA
             'NAME': 'docker',
             'USER': 'docker',
             'PASSWORD': 'docker',
-            'HOST': os.environ.get('DB_1_PORT_5432_TCP_ADDR'),
-            'PORT': os.environ.get('DB_1_PORT_5432_TCP_PORT'),
+            'HOST': 'db',
         }
     }
 

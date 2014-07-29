@@ -73,8 +73,7 @@ Open up your newly-generated `database.yml`. Replace its contents with the follo
       pool: 5
       username: docker
       password: docker
-      host: <%= ENV.fetch('DB_1_PORT_5432_TCP_ADDR', 'localhost') %>
-      port: <%= ENV.fetch('DB_1_PORT_5432_TCP_PORT', '5432') %>
+      host: db
 
     test:
       <<: *default
